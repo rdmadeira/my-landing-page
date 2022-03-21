@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Anchorage-Bold';
+    src: url(../fonts/anchorage-bold.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    src: url(../fonts/Barlow-Medium.ttf);
+    font-weight: 400;
+}
+:root {
+    /* LightMode */
+    --black-olive: #404A46ff;
+    --green-pigment: #1C9941ff;
+    --whitegreen: #E6F5E5;
+    --yellow: #C8D92Bff;
+    --middle-green-yellow: #B4C057ff;
+    --russian-green: #70937Bff;
+    --ash-gray: #CDD9C9ff;
+    --baby-powder: #F8FAF8ff;
+    --eton-blue: #89C99Bff;
+    --marine-green: #b2ddbc;
+    --font-menu: 'Barlow', sans-serif;
+    --font-content: 'opensans'
+    --font-main: 'Anchorage-Bold', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: unset;
+    width: fit-content;
+    height: fit-content;
+}
+h1, h2 {
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    font-family: var(--font-main);
+}
+p, label {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4vw;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+section.first-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/arbol-2.png);
+    background-size: 100% 100%;
+    color: var(--whitegreen);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+div.titulo {
+    position: absolute;
+    width: 35%;
+    left: 5vw;
+    bottom: 5vw;
+    font-size: max(1.8vw,18px);
+}
+div.subtitulo {
+    position: absolute;
+    width: 20%;
+    bottom: 5vw;
+    right: 5vw;
+    text-align: center;
+    font-size: max(1.5vw,14px);
+}
+div.parrafo {
+    width: 40%;
+    min-width: 381px;
+    font-size: max(1.4vw,15px);
+    height: fit-content;
+    background-color: rgb(112 147 123 / 45%);
+    align-self: center;
+    justify-self: center;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    border: var(--whitegreen) solid 2px;
+    border-radius: 10px;
+    padding: 2vw;
+    position: absolute;
+    top: 2vw;
+}
+div.parrafo p, div.parrafo label {
+    font-size: max(1.4vw,16px);
+}
+#form-email {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#email {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    width: 70%;
+    border: none;
+    justify-self: center;
+}
+div#buttons {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5vw;
+}
+.button1 {
+    cursor: pointer;
+    padding: 15px 20px;
+    background-color: rgb(230 245 229 / 90%);
+    border: var(--black-olive) none;
+    border-radius: 20px;
+    color: var(--black-olive);
+    font-family: var(--font-menu);
+    font-weight: bolder;
+    width: 100px;
+}
+#button-lm {
+    background-color: var(--black-olive);
+    color: var(--whitegreen);
+    border: var(--whitegreen) solid 2px;
+    width: max-content;    
+}
+.button1:hover, #button-lm:hover {
+    background-color: var(--middle-green-yellow);
+    transition: all 0.3s ease;
+}
+div.logo-madeira {
+    align-self: center;
+}
+
+
+
+
+
+
+/* ******************** Second Page ******************************/
+
+
+
+
+
+.second-section-div {
+    display: flex;
+    flex-flow: row wrap;
+    background: var(--eton-blue);
+    width: 100%;
+    height: 100vh;
+}
+.second-section-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw 0vw 5vw 3vw;
+    width: 45%;
+    height: 100%;
+    color: var(--black-olive);
+}
+.second-section-left-div h2 {
+    text-align: center;
+    font-size: max(3vw,22px);
+}
+.second-section-left-div div {
+    width: 120%;
+}
+.second-section-right-div {
+    width: 55%;
+    background: url(../assets/background-2.png);
+    background-size: 97% 100%;
+    background-repeat: no-repeat;
+}
+.second-section-right-div div {
+    margin-left: 7vw;
+    width: calc(100% - 7vw - 6%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--black-olive);
+    padding: 0 3vw;
+}
+.second-section-right-div div p {
+    font-size: max(2.4vw,16px);
+    text-align: center;
+}
+.button-second-section {
+    width: fit-content;
+    cursor: pointer;
+    padding: 20px 20px;
+    border: var(--black-olive) none;
+    border-radius: 50px;
+    font-family: var(--font-menu);
+    font-size: max(1.7vw,13px);
+    font-weight: bolder;
+}
+#button1-second-section {
+    background-color: var(--black-olive);
+    color: var(--whitegreen);
+}
+#button2-second-section {
+    background-color: var(--whitegreen);
+    color: var(--black-olive);
+}
+#button1-second-section:hover, #button2-second-section:hover {
+    background-color: var(--middle-green-yellow);
+    color: var(--black-olive);
+    transition: all 0.3s ease;
+}
+
+/* ************* About Me ********************************* */
+
+
+.third-section-div {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: var(--eton-blue);
+}
+.third-section-left-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 95%;
+}
+.card {
+    background-color: var(--marine-green);
+    background: url(../assets/background-3.png);
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    row-gap: 1vw;
+    padding-top: 2vw;
+}
+.card-div-img {
+    width: 170px;
+    height: 190px;
+    background: url(../assets/moldura.png);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-div-img img {
+    border-radius: 50%;
+    width:80%; height:80%;
+    z-index: 0;
+}
+.card-description {
+    color: var(--black-olive);
+    width: 80%;
+    letter-spacing: 0px;
+    font-family: var(--font-content);
+    background-color: var(--eton-blue);
+    padding: 1vw 2vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+.card-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6em;
+    font-size: max(1.6vw,20px);
+}
+.contact-me {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vw;
+}
+.contact-me a img {
+    width: 25%;
+
+}
+.contact-me a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1vw;
+}
+.third-section-right-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100vh;
+}
+div.my-description {
+    width: 80%;
+    background: var(--marine-green);
+    color: var(--black-olive);
+    line-height: 30px;
+    padding: 2vw;
+    border-radius: 15px;
+}
+.my-description p {
+    margin-bottom: 2vw;
+    font-size: max(2vw,18px);
+}
+.my-description div {
+    width: 30%;
+    text-align: center;
+}
+.my-description div img {
+    width: 100%;
+}
