@@ -313,8 +313,8 @@ div.my-description {
     border-radius: 15px;
 }
 .my-description p {
-    margin-bottom: 2vw;
-    font-size: max(2vw,18px);
+    margin-bottom: 1.5vw;
+    font-size: max(1.4vw,15px);
 }
 .my-description div {
     width: 30%;
