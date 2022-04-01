@@ -1,7 +1,27 @@
 @media screen and (max-width:520px) {
+    div.parrafo {
+        width: 65%;
+        min-width: unset;
+    }
+    div.titulo {
+        font-size: max(1.8vw,15px);
+    }
+    div.subtitulo {
+        right: 12vw;
+        font-size: max(1.5vw,11px);
+
+    }
+    #email {
+        width: 100%;
+    }
+    #buttons {
+        flex-direction: column;
+        row-gap: 5vw;
+    }
     .second-section-div {
         flex-direction: column;
         height: max-content;
+        row-gap: 10vw;
     }
     .second-section-left-div {
         width: 100%;
@@ -44,6 +64,9 @@
     }
     .my-description p {
         font-size: 18px;
+    }    
+    div.my-description {
+        margin-bottom: 10vw;
     }
 
 }
