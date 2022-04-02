@@ -218,6 +218,92 @@ div.logo-madeira {
     transition: all 0.3s ease;
 }
 
+
+.second-section-2, .second-section-3 {
+    width: 100%;
+    background: var(--marine-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 10vw;
+    column-gap: 6vw;
+    row-gap: 5vw;
+    border: var(--black-olive) solid;
+    border-width: 5px 0;
+}
+.contain-sec02-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sec-02-div {
+    width: 35%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5vw;
+}
+.sec-02-div div {
+    width: 50%;
+}
+/* .sec-02-div p {
+    font-family: var(--font-p);
+    font-size: max(2.2vw,16px);
+    color: var(--black-olive);
+    width: 100%;
+} */
+
+
+.second-section-3 {
+    padding: 5vw 5vw;
+}
+.second-section-3 h2, .second-section-2 h2 {
+    font-size: 2.5vw;
+}
+.contain-sec03-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.sec-03-div {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+.contain-img-sec-03 {
+    padding: 10px;
+    border-radius: 50%;
+    border: solid 5px var(--black-olive);
+    height: 11vw;
+    display: flex;
+    align-items: center;
+}
+.sec-03-div div {
+    width: 50%;
+}
+.second-section-3 h2, .second-section-3 h3, .second-section-2 h2 {
+    color: var(--russian-green);
+}
+.sec-03-div h3 {
+    font-family: var(--font-p);
+    font-size: 3vw;
+}
+.sec-03-div p, .sec-02-div p {
+    padding: 2vw;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 100;
+}
+
 /* ************* About Me ********************************* */
 
 
