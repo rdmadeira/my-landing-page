@@ -8,6 +8,11 @@
     src: url(../fonts/Barlow-Medium.ttf);
     font-weight: 400;
 }
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    src: url(../fonts/Barlow-Thin.ttf);
+    font-weight: 100;
+}
 :root {
     /* LightMode */
     --black-olive: #404A46ff;
@@ -242,13 +247,14 @@ div.logo-madeira {
     height: 20%;
     display: flex;
     flex-direction: column;
-    row-gap: 5vw;
+    row-gap: 2vw;
     align-items: center;
     justify-content: center;
     column-gap: 5vw;
 }
 .sec-02-div div {
     width: 50%;
+    max-width: 102px;
 }
 /* .sec-02-div p {
     font-family: var(--font-p);
@@ -298,10 +304,11 @@ div.logo-madeira {
     font-size: 3vw;
 }
 .sec-03-div p, .sec-02-div p {
-    padding: 2vw;
+    padding: 1vw 2vw;
     text-align: center;
-    font-size: 2vw;
+    font-size: min(2vw,20px);
     font-weight: 100;
+    color: var(--black-olive);
 }
 
 /* ************* About Me ********************************* */
@@ -409,12 +416,17 @@ div.my-description {
 .my-description div img {
     width: 100%;
 }
-@media screen and (min-width:521px) and (max-width:980px) {
-    div.my-description {
-        width: 95%;
-    }
-    .my-description p {
-        margin-bottom: 0;
-        font-size: max(1.4vw,19px);
-    }
+footer {
+    background: var(--black-olive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0vw;
+}
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    column-gap: 8vw;
 }
