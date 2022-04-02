@@ -1,0 +1,46 @@
+@media screen and (min-width:521px) and (max-width:980px) and (orientation: portrait) {
+    .third-section-div {
+        height:fit-content;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10vw;
+    }
+    .third-section-left-div {
+        width: 100%;
+    }
+    .card-div-img {
+        width: 42%;
+        height: 40%;
+        min-width: 258px;
+    }
+    .card {
+        height: 89vw;
+        min-height: 800px;
+        row-gap: 2vw;
+        padding-top: 5vw;
+    }
+    .card-description h2{
+        align-self: center;
+    }
+    .card-list {
+        font-size: max(3.5vw,23px);
+    }
+    .third-section-right-div {
+        width: 100%;
+        height: fit-content;   
+    }
+    div.my-description {
+        width: 90%;
+    }
+    .my-description p {
+        font-size: max(4.2vw,27px);
+        line-height: 8.2vw;
+    }
+    footer {
+        padding: 5vw 0vw;
+    }
+    footer div {
+        width: 47%;
+        column-gap: 8vw;
+    }
+}
