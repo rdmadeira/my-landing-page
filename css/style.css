@@ -64,6 +64,18 @@ section.first-section {
     align-items: flex-end;
     justify-content: center;
 }
+.contain-logo {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 3vw;
+    left: 10px;
+    background: #70937bc2;
+    border-radius: 18px;
+    display: none;
+    border: solid 4px var(--russian-green);
+
+}
 div.titulo {
     position: absolute;
     width: 35%;

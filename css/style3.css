@@ -1,9 +1,71 @@
-@media screen and (min-width:521px) and (max-width:980px) and (orientation: portrait) {
-    .third-section-div {
-        height:fit-content;
+@media screen and (max-width:980px) and (orientation: portrait) and (max-aspect-ratio: 77/100) {
+    div.parrafo p, div.parrafo label {
+        font-size: max(3.8vw,25px);
+    }
+    div.parrafo {
+        width: 90%;
+        top: 30vw;
+    }
+    input#email {
+        height: 6vh;
+        font-size: 24px;
+    }
+    .button1, #button-lm {
+        padding: 3vw;
+        font-size: 3vw;
+        width: max-content;
+    }
+    .second-section-div {
         flex-direction: column;
         align-items: center;
+        height: fit-content;
+    }
+    .second-section-left-div {
+        width: 75%;
+    }
+    .second-section-left-div h2{
+        font-size: 30px;
+    }
+    .second-section-right-div {
+        width: 90%;
+        padding: 5vw 0vw;   
+        margin-bottom: 5vw;
+    }
+    .second-section-right-div div {
+        row-gap: 5vw;
+    }
+    .second-section-right-div div p {
+        font-size: 30px;
+    }
+    .button-second-section {
+        font-size: 22px;
+    }
+    .second-section-2 h2, .second-section-3 h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .sec-02-div div {
+        width: 55%;
+        max-width: unset;
+        height: 15vw;
+    }
+    .sec-03-div div {
+        width: 70%;
+        max-width: unset;
+        height: 15vw;
+    }
+    .sec-03-div h3 {
+        font-size: 3.5vw;
+    }
+    
+    .sec-03-div p, .sec-02-div p {
+        font-size: 2.8vw;    
+    }
+    .third-section-div {
+        height:fit-content;
+        align-items: center;
         row-gap: 10vw;
+        flex-direction: column;
     }
     .third-section-left-div {
         width: 100%;
@@ -31,6 +93,7 @@
     }
     div.my-description {
         width: 90%;
+        margin-bottom: 4vw;
     }
     .my-description p {
         font-size: max(4.2vw,27px);
