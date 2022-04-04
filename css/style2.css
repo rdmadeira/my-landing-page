@@ -1,4 +1,5 @@
 @media screen and (max-width:520px) and (max-aspect-ratio: 77/100) {
+    
     section.first-section {
         background-size: 145% 100%;
         background-position-x: right;

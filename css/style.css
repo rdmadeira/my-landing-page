@@ -13,6 +13,84 @@
     src: url(../fonts/Barlow-Thin.ttf);
     font-weight: 100;
 }
+
+@keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+@keyframes appear {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
 :root {
     /* LightMode */
     --black-olive: #404A46ff;
@@ -28,6 +106,21 @@
     --font-menu: 'Barlow', sans-serif;
     --font-content: 'opensans'
     --font-main: 'Anchorage-Bold', sans-serif;
+}
+.first-anim {
+    animation-name: bounce-in-top;
+    animation-duration: 1.5s;
+    animation-delay: 1.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.pulse-effect {
+    animation: pulse alternate infinite 0.8s cubic-bezier(0.72, -0.58, 0.31, 1.7);
+    
+}
+.appear-effect {
+    animation: appear forwards 3s ease;
+    opacity: 0;
 }
 * {
     box-sizing: border-box;
@@ -82,6 +175,7 @@ div.titulo {
     left: 5vw;
     bottom: 5vw;
     font-size: max(1.8vw,18px);
+    opacity: 0;
 }
 div.subtitulo {
     position: absolute;
@@ -90,6 +184,7 @@ div.subtitulo {
     right: 5vw;
     text-align: center;
     font-size: max(1.5vw,14px);
+    opacity: 0;
 }
 div.parrafo {
     width: 40%;
@@ -108,9 +203,11 @@ div.parrafo {
     padding: 2vw;
     position: absolute;
     top: 2vw;
+    opacity: 0;
 }
 div.parrafo p, div.parrafo label {
     font-size: max(1.4vw,16px);
+    
 }
 #form-email {
     display: flex;
