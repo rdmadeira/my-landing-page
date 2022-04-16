@@ -528,6 +528,8 @@ div.my-description {
 footer {
     background: var(--black-olive);
     display: flex;
+    flex-direction: column;
+    row-gap: 6vw;
     align-items: center;
     justify-content: center;
     padding: 2vw 0vw;
@@ -538,4 +540,53 @@ footer div {
     align-items: center;
     width: 33%;
     column-gap: 8vw;
+}
+.div-sociales a:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+}
+footer nav ul {
+    display: flex;
+    column-gap: 5vw;
+    list-style: none;
+    color: var(--russian-green);
+    font-family: var(--font-menu);
+    text-align: center;
+}
+.footer-nav-li:hover {
+    transform: scale(1.16);
+    transition: all 0.3s ease-out;
+}
+li#portfolio {
+    position: relative;
+}
+ul.submenu {
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
+    height: 0vw;
+    position: absolute;
+    transition: all 1s ease-out;
+    top: -8vw;
+    left: 0vw;
+    height: fit-content;
+    transform: initial;
+    padding: 1vw;
+}
+/* .submenu li {
+    margin-bottom: 1vw;
+} */
+#portfolio:hover {
+    cursor: pointer;
+}
+#portfolio:hover> .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: -5vw;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    transform: scale(0.92);
+}
+.submenu>li>a:hover {
+    color: var(--yellow);
 }
