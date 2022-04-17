@@ -449,6 +449,7 @@ div.logo-madeira {
     justify-content:flex-start;
     row-gap: 1vw;
     padding-top: 2vw;
+    z-index: 0;
 }
 .card-div-img {
     width: 170px;
@@ -469,12 +470,42 @@ div.logo-madeira {
     width: 80%;
     letter-spacing: 0px;
     font-family: var(--font-content);
-    background-color: var(--eton-blue);
+    background: rgb(137,201,155);
+    background: radial-gradient(circle at top, rgb(153 189 163) 0%, rgb(147 193 160) 15%, rgb(149 201 164) 32%, rgb(150 197 163) 50%, rgb(154 205 169) 67%, rgb(167 217 181) 85%, rgb(175 221 188) 100%);
     padding: 1vw 2vw;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     row-gap: 2vw;
+    position: relative;
+}
+.card-description::before, .card-description::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.card-description::after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
 }
 .card-list {
     display: flex;
@@ -505,14 +536,44 @@ div.logo-madeira {
     justify-content: space-evenly;
     width: 50%;
     height: 100vh;
+    z-index: 0;
 }
 div.my-description {
     width: 80%;
-    background: var(--marine-green);
+    background: radial-gradient(circle at top, #b4c057 0%, var(--marine-green) 22%, var(--ash-gray) 32%, var(--ash-gray) 50%, #98dbab 67%, rgb(164 235 184) 85%, rgb(212 231 211) 100%);
     color: var(--black-olive);
     line-height: 30px;
     padding: 2vw;
     border-radius: 15px;
+    position: relative;
+}
+.my-description::before, .my-description::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.my-description::after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
 }
 .my-description p {
     margin-bottom: 1.5vw;
