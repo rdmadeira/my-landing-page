@@ -156,6 +156,18 @@ section.first-section {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
+}
+.first-section::before {
+    content: "";
+    background-color: var(--black-olive);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
 }
 .contain-logo {
     width: 15vw;
